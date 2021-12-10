@@ -7,7 +7,7 @@ var upperArray = upperStr.split('')
 var specialStr= "!#$%&()*+-/:;<=>?@[]/^{|}~"
 var specialArray = specialStr.split('')
 var totalArray = []
-
+	var rando = ''
 
 function generatePassword() {
 	var passLngth = parseInt(window.prompt('How many characters do you want your password to have?'))
@@ -41,9 +41,11 @@ function generatePassword() {
 
 	for (var i = 0; i < passLngth; i++) {			
 		var value = Math.floor(Math.random()* totalArray.length)
-		var pass = totalArray[value]		
+		rando = rando + totalArray[value]
+		console.log(rando)		
+		// var value = String.fromCharCode(Math.floor(Math.random()* 26)+ 97)
 	}
-	return pass
+	return rando
 }
 
 
