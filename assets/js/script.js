@@ -10,8 +10,9 @@ var totalArray = [];
 var rando = '';
 
 function generatePassword() {
-	if (rando.length > 0) {
+	if (rando.length > 0 ) {
 		rando = '';
+		totalArray = [];
 	}
 
 	var passLngth = parseInt(window.prompt('How many characters do you want your password to have?'));
